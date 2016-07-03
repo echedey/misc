@@ -1,0 +1,8 @@
+<network connections='5'>
+  <name>opnfv.storage</name>
+  <uuid>266da06b-b4d0-4192-9dd3-30836842a95f</uuid>
+  <forward mode='bridge'/>
+  <bridge name='opnfv.storage'/>
+  <virtualport type='openvswitch'/>
+</network>
+

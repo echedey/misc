@@ -1,0 +1,8 @@
+<network connections='6'>
+  <name>opnfv.pxe</name>
+  <uuid>246d5465-1c33-4a7b-857b-a8538a70bb61</uuid>
+  <forward mode='bridge'/>
+  <bridge name='opnfv.pxe'/>
+  <virtualport type='openvswitch'/>
+</network>
+
