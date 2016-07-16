@@ -1,8 +1,13 @@
-<network connections='5'>
-  <name>opnfv.private</name>
-  <uuid>c4cad607-40f5-4a50-ae83-630b20de3ae9</uuid>
+<network>
+  <name>opnfv.storage</name>
+  <uuid>266da06b-b4d0-4192-9dd3-30836842a95f</uuid>
   <forward mode='bridge'/>
-  <bridge name='opnfv.private'/>
+  <bridge name='opnfv.storage'/>
   <virtualport type='openvswitch'/>
+  <portgroup name='vlan.storage'>
+    <vlan>
+      <tag id='102'/>
+    </vlan>
+  </portgroup>
 </network>
 

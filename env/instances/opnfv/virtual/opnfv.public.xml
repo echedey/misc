@@ -1,14 +1,13 @@
-<network connections='5'>
+<network>
   <name>opnfv.public</name>
-  <uuid>4aa03cda-697e-41e6-81fc-f8edc6c5810b</uuid>
-  <forward mode='nat'>
-    <nat>
-      <port start='1024' end='65535'/>
-    </nat>
-  </forward>
-  <bridge name='opnfv.public' stp='on' delay='0'/>
-  <mac address='52:54:00:8d:dd:f6'/>
-  <ip address='172.16.0.1' netmask='255.255.255.0'>
-  </ip>
+  <uuid>2fca7f8c-d1c9-402b-8de3-ba83db252a85</uuid>
+  <forward mode='bridge'/>
+  <bridge name='opnfv.public'/>
+  <virtualport type='openvswitch'/>
+  <portgroup name='vlan.public'>
+    <vlan>
+      <tag id='100'/>
+    </vlan>
+  </portgroup>
 </network>
 
