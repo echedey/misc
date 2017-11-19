@@ -5,3 +5,11 @@ git add README.md
 git commit -m "first commit"
 git remote add origin https://github.com/echedey/misc.git
 git push -u origin master
+
+#Dump tmux configuration
+tmux show -g | sed 's/^/set-option -g /' > ~/.tmux.conf
+
+#Start tmux in .bashrc
+if command -v tmux>/dev/null; then
+  [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && exec tmux
+fi
